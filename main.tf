@@ -16,7 +16,7 @@ module "vpc" {
   enable_dns_support   = true
 }
 
-resource "aws_db_subnet_group" "education" {
+resource "aws_db_subnet_group" "educationmas" {
   name       = "education"
   subnet_ids = module.vpc.public_subnets
 
@@ -48,7 +48,7 @@ resource "aws_security_group" "rds" {
   }
 }
 
-resource "aws_db_parameter_group" "education" {
+resource "aws_db_parameter_group" "educationmas" {
   name   = "education"
   family = "postgres14"
 
