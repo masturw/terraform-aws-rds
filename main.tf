@@ -64,7 +64,7 @@ resource "random_pet" "random" {
   length = 1
 }
 
-resource "aws_db_instance" "education" {
+resource "aws_db_instance" "educationmas" {
   identifier             = "${var.db_name}-${random_pet.random.id}"
   instance_class         = "db.t3.micro"
   allocated_storage      = 5
